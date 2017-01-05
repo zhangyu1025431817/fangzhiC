@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">FangzhiC</string>
+    <string name="app_name">大房智</string>
+    
+    <string name="page_home">首页</string>
+    <string name="page_baby">宝贝</string>
+    <string name="page_smart_design">智能设计</string>
+    <string name="page_shopping_cart">购物车</string>
+    <string name="page_user_center">我的</string>
+    <string name="house_location">楼盘定位</string>
+    <string name="baby_space">宝贝空间</string>
+    <string name="house_fix">房智维修</string>
+    <string name="house_old_new">旧房翻新</string>
+    <string name="sweet_house_design">婚房设计</string>
 </resources>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#157efb</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="gray_light">#f0f0f0</color>
+    <color name="main_tab_text_color_select">#157efb</color>
+    <color name="main_tab_text_color_normal">#3c3c3c</color>
+    <color name="color_red">#ff3333</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_text_gray">#c8c8c8</color>
 </resources>

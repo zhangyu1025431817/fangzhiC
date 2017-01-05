@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_title" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/banner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="320px"-->
+        <!--android:background="@drawable/bg_banner" />-->
+    <zhangyu.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="320px"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cut_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="智能选择"
+            android:textColor="@color/main_tab_text_color_select"
+            android:textSize="22px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px">
+
+        <TextView
+            android:id="@+id/tv_house_location"
+            style="@style/home_page_text_style"
+            android:layout_width="248px"
+            android:layout_height="248px"
+            android:background="#ff9933"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/icon_function_location"
+            android:gravity="center_horizontal"
+            android:paddingTop="60px"
+            android:text="@string/house_location" />
+
+        <TextView
+            android:id="@+id/tv_smart_design"
+            style="@style/home_page_text_style"
+            android:layout_width="470px"
+            android:layout_height="248px"
+            android:layout_alignParentRight="true"
+            android:background="#009999"
+            android:drawableLeft="@drawable/icon_function_design"
+            android:drawablePadding="14px"
+            android:gravity="center_vertical"
+            android:paddingLeft="150px"
+            android:text="@string/page_smart_design" />
+
+        <TextView
+            android:id="@+id/tv_product"
+            style="@style/home_page_text_style"
+            android:layout_width="470px"
+            android:layout_height="248px"
+            android:layout_below="@id/tv_house_location"
+            android:layout_marginTop="10px"
+            android:background="#00ce9b"
+            android:drawableLeft="@drawable/icon_function_product"
+            android:drawablePadding="14px"
+            android:gravity="center_vertical"
+            android:paddingLeft="150px"
+            android:text="@string/baby_space" />
+
+        <TextView
+            android:id="@+id/tv_house_fix"
+            style="@style/home_page_text_style"
+            android:layout_width="248px"
+            android:layout_height="248px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_smart_design"
+            android:layout_marginTop="10px"
+            android:background="#ff9966"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/icon_function_fix"
+            android:gravity="center_horizontal"
+            android:paddingTop="60px"
+            android:text="@string/house_fix" />
+
+        <TextView
+            android:id="@+id/tv_house_old_new"
+            style="@style/home_page_text_style"
+            android:layout_width="360px"
+            android:layout_height="235px"
+            android:layout_below="@id/tv_product"
+            android:layout_marginTop="10px"
+            android:background="#0099ff"
+            android:drawableLeft="@drawable/icon_function_house_new"
+            android:drawablePadding="14px"
+            android:gravity="center_vertical"
+            android:paddingLeft="92px"
+            android:text="@string/house_old_new" />
+
+        <TextView
+            android:id="@+id/tv_sweet_house"
+            style="@style/home_page_text_style"
+            android:layout_width="360px"
+            android:layout_height="235px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_product"
+            android:layout_marginTop="10px"
+            android:background="#6666ff"
+            android:drawableLeft="@drawable/icon_function_marry_house"
+            android:drawablePadding="14px"
+            android:gravity="center_vertical"
+            android:paddingLeft="92px"
+            android:text="@string/sweet_house_design" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

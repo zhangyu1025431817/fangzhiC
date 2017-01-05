@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+    </style>
+
+    <style name="home_page_text_style">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">22px</item>
+    </style>
+    <style name="styleTextSmall_22">
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <style name="styleTextLarge_36">
+        <item name="android:textSize">36px</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
 </resources>

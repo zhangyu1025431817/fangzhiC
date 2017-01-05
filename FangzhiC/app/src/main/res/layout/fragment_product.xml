@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.fangzhic.app.view.AutoAppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/view_common_back_search_title"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <com.fangzhic.app.view.AutoTabLayout
+            android:id="@+id/tab_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="@color/colorWhite"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/main_tab_text_color_normal"
+            app:tabSelectedTextColor="@color/main_tab_text_color_select"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="scrollable" />
+
+    </com.fangzhic.app.view.AutoAppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:paddingTop="10px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.zhy.autolayout.AutoLinearLayout>
