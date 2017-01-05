@@ -11,6 +11,7 @@
         android:paddingRight="40px"
         android:layout_height="match_parent" />
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/title_text_size"

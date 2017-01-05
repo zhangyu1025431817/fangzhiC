@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@color/colorPrimary"
     android:clipToPadding="true"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true">
 
-    <include layout="@layout/view_common_back_title" />
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/view_common_back_title" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:background="@color/gray_light"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title"
+        android:layout_above="@+id/layout_bottom"
+        android:background="@color/gray_light">
 
         <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"
@@ -22,8 +25,8 @@
 
             <com.zhy.autolayout.AutoRelativeLayout
                 android:layout_width="match_parent"
-                android:background="@color/colorWhite"
-                android:layout_height="750px">
+                android:layout_height="750px"
+                android:background="@color/colorWhite">
 
                 <zhangyu.banner.Banner
                     android:id="@+id/banner"
@@ -40,6 +43,7 @@
                     android:paddingBottom="20px">
 
                     <TextView
+                        android:id="@+id/tv_diy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="50px"
@@ -50,6 +54,7 @@
                         android:textSize="22px" />
 
                     <TextView
+                        android:id="@+id/tv_camera"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_round"
@@ -62,26 +67,22 @@
 
             <TextView
                 android:id="@+id/tv_name"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10px"
-                android:paddingLeft="20px"
-                android:paddingRight="20px"
-                android:paddingTop="10px"
+                android:background="@color/colorWhite"
+                android:padding="20px"
                 android:text="简约雪尼尔高档纯色成品窗帘"
                 android:textColor="@color/main_tab_text_color_normal"
                 android:textSize="32px" />
 
             <TextView
                 android:id="@+id/tv_describe"
-                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10px"
+                android:background="@color/colorWhite"
+                android:paddingBottom="20px"
                 android:paddingLeft="20px"
                 android:paddingRight="20px"
-                android:paddingTop="10px"
                 android:text="简约雪尼尔高档纯色成品窗帘"
                 android:textColor="@color/color_text_gray"
                 android:textSize="28px" />
@@ -89,12 +90,11 @@
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:background="@color/colorWhite"
-                android:paddingBottom="10px"
+                android:orientation="horizontal"
+                android:paddingBottom="40px"
                 android:paddingLeft="20px"
-                android:paddingRight="20px"
-                android:paddingTop="10px">
+                android:paddingRight="20px">
 
                 <com.zhy.autolayout.AutoLinearLayout
                     android:layout_width="0dp"
@@ -144,14 +144,15 @@
                         android:textSize="40px" />
                 </com.zhy.autolayout.AutoLinearLayout>
             </com.zhy.autolayout.AutoLinearLayout>
+
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100px"
-                android:background="@color/colorWhite"
+                android:layout_height="98px"
                 android:layout_marginTop="10px"
-                android:paddingLeft="20px"
+                android:background="@color/colorWhite"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="20px">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -162,21 +163,24 @@
 
                 <TextView
                     android:id="@+id/tv_type"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32px"
+                    android:drawableRight="@drawable/icon_goto"
+                    android:paddingRight="40px"
                     android:text="蓝色"
                     android:textColor="@color/main_tab_text_color_normal"
-                    android:textSize="40px" />
+                    android:textSize="32px" />
             </com.zhy.autolayout.AutoLinearLayout>
+
             <com.zhy.autolayout.AutoLinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100px"
-                android:background="@color/colorWhite"
+                android:layout_height="98px"
                 android:layout_marginTop="10px"
-                android:paddingLeft="20px"
+                android:background="@color/colorWhite"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingLeft="20px">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,30 +193,92 @@
                     android:id="@+id/tv_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingRight="40px"
                     android:layout_marginLeft="32px"
-                    android:text="重庆市南岸区"
                     android:drawableRight="@drawable/icon_goto"
+                    android:paddingRight="40px"
+                    android:text="重庆市南岸区"
                     android:textColor="@color/main_tab_text_color_normal"
-                    android:textSize="40px" />
+                    android:textSize="32px" />
             </com.zhy.autolayout.AutoLinearLayout>
-            <com.zhy.autolayout.AutoRelativeLayout
+
+            <com.jude.easyrecyclerview.EasyRecyclerView
+                android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
-                android:layout_height="52px">
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="3px"
-                    android:layout_centerInParent="true"
-                    android:background="@drawable/cut_line_2"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textSize="22px"
-                    android:gravity="center"
-                    android:layout_centerInParent="true"
-                    android:textColor="@color/color_text_gray"
-                    android:text="继续拖动，查看图文详情"
-                    android:layout_height="match_parent" />
-            </com.zhy.autolayout.AutoRelativeLayout>
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:layout_marginTop="10px"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:text="宝贝详情"
+                android:textColor="@color/main_tab_text_color_normal"
+                android:textSize="32px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/demo_bg_product_detail" />
         </com.zhy.autolayout.AutoLinearLayout>
     </ScrollView>
-</com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:id="@+id/layout_bottom"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_divider_linear_layout"
+        android:background="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="客服"
+            android:textSize="20px"
+            android:paddingTop="10px"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/icon_phone"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_star"
+            android:drawablePadding="10px"
+            android:paddingTop="10px"
+            android:gravity="center_horizontal"
+            android:text="收藏"
+            android:textSize="20px"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10px"
+            android:textSize="20px"
+            android:drawableTop="@drawable/icon_product_detail_cart"
+            android:drawablePadding="10px"
+            android:gravity="center_horizontal"
+            android:text="购物车"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="@color/colorWhite"
+            android:textSize="32px"
+            android:background="@color/main_tab_text_color_select"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:background="@color/color_red"
+            android:textColor="@color/colorWhite"
+            android:textSize="32px"
+            android:layout_weight="2"
+            android:text="支付定金"
+            android:layout_height="match_parent" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

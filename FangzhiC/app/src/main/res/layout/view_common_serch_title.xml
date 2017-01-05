@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88px"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.fangzhic.app.view.SearchClearEditText
+        android:id="@+id/et_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/colorWhite"
+        android:textSize="26px"
+        android:drawablePadding="10px"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:background="@drawable/bg_et_search"
+         />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="取消"
+        android:textColor="@color/colorWhite" />
+</com.zhy.autolayout.AutoLinearLayout>

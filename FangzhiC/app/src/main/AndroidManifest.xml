@@ -26,6 +26,12 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".main.product.search.ProductSearchActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".main.maintain.MaintainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".main.renovate.RenovateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".main.sweet.SweetHouseActivity"
+            android:screenOrientation="portrait"/>
         <meta-data
             android:name="design_width"
             android:value="750" />
